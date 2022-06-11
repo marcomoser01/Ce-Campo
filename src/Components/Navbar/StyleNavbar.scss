@@ -1,0 +1,154 @@
+// Navigation Variables
+$content-width: 100vw;
+$breakpoint: 799px;
+$nav-height: 100vh/8;
+$nav-background: #a90000;
+$nav-text-color: #ffffff;
+$link-hover-color: #2581dc;
+
+.inline-div {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.navbar {
+  height: $nav-height;
+  width: 90vw;
+  max-width: $content-width;
+  background: $nav-background;
+}
+
+.logo {
+  flex: 1;
+  margin: 20px;
+  img,
+  img:visited {
+    height: calc($nav-height - 20px);
+    width: calc($nav-height - 20px);
+  }
+}
+
+.campi-navbar {
+  flex: 4;
+  margin: 20px;
+}
+
+.testo-campi {
+  flex: 1;
+  height: $nav-height;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: center;
+
+  p,
+  p:visited {
+    margin: 0 0 0 0 !important;
+    color: $nav-text-color;
+    text-decoration: none;
+    font-size: large;
+  }
+
+  p.active {
+    background: $link-hover-color;
+    color: $nav-text-color;
+  }
+
+  &:hover {
+    background: $link-hover-color;
+    color: $nav-text-color;
+  }
+}
+
+// Outer navigation wrapper
+.navigation {
+  height: $nav-height;
+  background: $nav-background;
+}
+
+// Container with no padding for navbar
+.nav-container {
+  max-width: $content-width;
+  margin: 0 auto;
+}
+
+/* Mobile navigation */
+
+// Binds to JS Toggle
+.nav-mobile {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: $nav-background;
+  height: $nav-height;
+  width: $nav-height;
+}
+
+@media only screen and (max-width: 798px) {
+  // Hamburger nav visible on mobile only
+  .nav-mobile {
+    display: block;
+  }
+
+  .navbar {
+    height: 500px;
+    display: inline !important;
+  }
+
+  #campi {
+    display: inline !important;
+  }
+
+  .testo-campi{
+    width: 100%;
+    padding: $nav-height 0 15px;
+    
+    
+  }
+  
+}
+
+#nav-toggle {
+  position: absolute;
+  left: 18px;
+  top: 22px;
+  cursor: pointer;
+  padding: 10px 35px 16px 0px;
+  span,
+  span:before,
+  span:after {
+    cursor: pointer;
+    border-radius: 1px;
+    height: 5px;
+    width: 35px;
+    background: $nav-text-color;
+    position: absolute;
+    display: block;
+    content: "";
+    transition: all 300ms ease-in-out;
+  }
+  span:before {
+    top: -10px;
+  }
+  span:after {
+    bottom: -10px;
+  }
+  &.active span {
+    background-color: transparent;
+    &:before,
+    &:after {
+      top: 0;
+    }
+    &:before {
+      transform: rotate(45deg);
+    }
+    &:after {
+      transform: rotate(-45deg);
+    }
+  }
+}
