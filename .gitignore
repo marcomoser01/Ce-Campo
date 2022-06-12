@@ -1,15 +1,18 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-/node_modules
+.Ce-Campo/node_modules
+.Ce-Campo-NPM/node_modules
 /.pnp
 .pnp.js
 
 # testing
-/coverage
+.Ce-Campo/coverage
+.Ce-Campo-NPM/coverage
 
 # production
-/build
+.Ce-Campo/build
+.Ce-Campo-NPM/build
 
 # misc
 .DS_Store
