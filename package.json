@@ -1,41 +1,47 @@
 {
+    "homepage": "https://marcomoser01.github.io/Ce-Campo",
     "name": "ce-campo",
     "version": "0.1.0",
     "private": true,
     "dependencies": {
-      "eslint-config-react-app": "^7.0.1",
-      "eslint-plugin-eslint-comments": "^3.2.0",
-      "jquery": "^3.6.0",
-      "node-sass": "^7.0.1",
-      "react": "^18.1.0",
-      "react-dom": "^18.1.0",
-      "react-icons": "^4.4.0",
-      "react-scripts": "^5.0.1",
-      "sass": "^1.52.3",
-      "serve": "^13.0.2"
+        "eslint-config-react-app": "^7.0.1",
+        "eslint-plugin-eslint-comments": "^3.2.0",
+        "jquery": "^3.6.0",
+        "node-sass": "^7.0.1",
+        "react": "^18.1.0",
+        "react-dom": "^18.1.0",
+        "react-icons": "^4.4.0",
+        "react-scripts": "^5.0.1",
+        "sass": "^1.52.3",
+        "serve": "^13.0.2"
     },
     "scripts": {
-      "start": "react-scripts start",
-      "build": "react-scripts build",
-      "test": "react-scripts test",
-      "eject": "react-scripts eject"
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build",
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject"
     },
     "eslintConfig": {
-      "extends": [
-        "react-app",
-        "react-app/jest"
-      ]
+        "extends": [
+            "react-app",
+            "react-app/jest"
+        ]
     },
     "browserslist": {
-      "production": [
-        ">0.2%",
-        "not dead",
-        "not op_mini all"
-      ],
-      "development": [
-        "last 1 chrome version",
-        "last 1 firefox version",
-        "last 1 safari version"
-      ]
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "devDependencies": {
+        "gh-pages": "^4.0.0"
     }
-  }
+}
