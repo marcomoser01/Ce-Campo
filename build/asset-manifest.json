@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Ce-Campo/static/css/main.e4d1588e.css",
+    "main.js": "/Ce-Campo/static/js/main.a4141bcb.js",
+    "index.html": "/Ce-Campo/index.html",
+    "main.e4d1588e.css.map": "/Ce-Campo/static/css/main.e4d1588e.css.map",
+    "main.a4141bcb.js.map": "/Ce-Campo/static/js/main.a4141bcb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e4d1588e.css",
+    "static/js/main.a4141bcb.js"
+  ]
+}
