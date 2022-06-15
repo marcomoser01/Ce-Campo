@@ -15,12 +15,14 @@ export default function App() {
     result = (
       <>
         <MobNavbar />
+        <p>Bellaaaaa</p>
       </>
     );
   } else {
     result = (
       <>
         <DeskNavbar />
+        <p>Bellaaaaa</p>
       </>
     );
   }
