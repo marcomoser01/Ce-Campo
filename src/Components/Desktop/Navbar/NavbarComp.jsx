@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./StyleNavbar.scss";
+import "./StyleNavbarDesktop.scss";
 import logo from "../../../Images/logo.jpeg";
 
 

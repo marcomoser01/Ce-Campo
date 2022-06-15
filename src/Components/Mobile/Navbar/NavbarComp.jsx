@@ -1,46 +1,54 @@
 import React from "react";
 import { HiMenu } from "react-icons/hi";
 import $ from "jquery";
-import "./StyleNavbar.scss";
+import "./StyleNavbarMobile.scss";
 import logo from "../../../Images/logo.jpeg";
 
 export default function NavbarComp() {
   return (
     <>
-      <div className="inline-div">
-        <div className="inline-div navbar">
-          <div className="logo">
+      <div className="inline-div-mobile">
+        <div className="inline-div-mobile navbar-mobile">
+          <div className="logo-mobile">
             <img src={logo} alt="logo"></img>
           </div>
-    <div className="spazio"></div>
-          <div className="nav-mobile" id="icon-menu">
-          
+          <div className="spazio-mobile"></div>
+          <div
+            className="nav-mobile"
+            onClick={() => menuIconClick("#campi-navbar-visibili")}
+          >
             <HiMenu />
           </div>
         </div>
       </div>
-<p className="bella">Ciao</p>
-      <div className="campi-navbar">
-        <div className="inline-div" id="campi">
-          <div className="testo-campi" id="chi-siamo">
+      
+      <div className="inline-div-mobile" id="campi-navbar-visibili">
+        
+        <div className="campi-navbar-mobile">
+          <div className="testo-campi-mobile" id="chi-siamo-mobile">
             <p>Chi siamo</p>
           </div>
-          <div className="testo-campi" id="cosa-facciamo">
+          <div className="testo-campi-mobile" id="cosa-facciamo-mobile">
             <p>Cosa Facciamo</p>
           </div>
-          <div className="testo-campi" id="news">
+          <div className="testo-campi-mobile" id="news-mobile">
             <p>News</p>
           </div>
-          <div className="testo-campi" id="coro-mania">
+          <div className="testo-campi-mobile" id="coro-mania-mobile">
             <p>Coro*Mania</p>
           </div>
         </div>
+
       </div>
     </>
   );
 }
 
-$("#icon-menu").on("click", () => {
-  console.log("ciao");
-  //funziona, ora devo far si che possa cambiare il valore alla variabile scss
-});
+function menuIconClick(classe) {
+  let display = $(classe).css("display");
+  if (display === "none") {
+    $(classe).css({ display: "flex" });
+  } else {
+    $(classe).css({ display: "none" });
+  }
+}

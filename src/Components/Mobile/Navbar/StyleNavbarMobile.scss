@@ -5,9 +5,9 @@ $nav-height: 100vh/8;
 $nav-background: #a90000;
 $nav-text-color: #ffffff;
 $link-hover-color: #2581dc;
-$cliccato: none;
 
-.inline-div {
+
+.inline-div-mobile {
   display: flex;
   align-content: center;
   align-items: center;
@@ -15,14 +15,14 @@ $cliccato: none;
   justify-content: center;
 }
 
-.navbar {
+.navbar-mobile {
   height: $nav-height;
   width: 90vw;
   max-width: $content-width;
   background: $nav-background;
 }
 
-.logo {
+.logo-mobile {
   flex: 1;
   margin: 20px;
   img,
@@ -32,12 +32,12 @@ $cliccato: none;
   }
 }
 
-.spazio {
+.spazio-mobile {
     flex: 3;
 }
 
 // Binds to JS Toggle
-.nav-mobile {
+.nav-mobile{
   flex: 1;
   display: flex;
   justify-content: flex-end;
@@ -53,8 +53,44 @@ $cliccato: none;
 
 }
 
+#campi-navbar-visibili {
+  display: none;
+  flex-direction: column;
+}
 
+.campi-navbar-mobile {
+  margin: 0;
+  flex: none;
+  height: calc(#{$nav-height} * 2);
+  width: 90vw;
+  max-width: $content-width;
+  background: $nav-background;
+}
 
-.bella{
-    display: #{$cliccato};
+.testo-campi-mobile {
+  flex: 1;
+  height: calc(#{$nav-height} / 2);
+  display: flex;
+  align-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: center;
+
+  p,
+  p:visited {
+    margin: 0 0 0 0;
+    color: $nav-text-color;
+    text-decoration: none;
+    font-size: large;
+  }
+
+  p.active {
+    background: $link-hover-color;
+    color: $nav-text-color;
+  }
+
+  &:hover {
+    background: $link-hover-color;
+    color: $nav-text-color;
+  }
 }
