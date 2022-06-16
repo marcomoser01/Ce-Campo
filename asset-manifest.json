@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Ce-Campo/static/css/main.d1b980f4.css",
-    "main.js": "/Ce-Campo/static/js/main.32c19045.js",
+    "main.css": "/Ce-Campo/static/css/main.e58acc13.css",
+    "main.js": "/Ce-Campo/static/js/main.fc867f8c.js",
     "index.html": "/Ce-Campo/index.html",
-    "main.d1b980f4.css.map": "/Ce-Campo/static/css/main.d1b980f4.css.map",
-    "main.32c19045.js.map": "/Ce-Campo/static/js/main.32c19045.js.map"
+    "main.e58acc13.css.map": "/Ce-Campo/static/css/main.e58acc13.css.map",
+    "main.fc867f8c.js.map": "/Ce-Campo/static/js/main.fc867f8c.js.map"
   },
   "entrypoints": [
-    "static/css/main.d1b980f4.css",
-    "static/js/main.32c19045.js"
+    "static/css/main.e58acc13.css",
+    "static/js/main.fc867f8c.js"
   ]
 }
