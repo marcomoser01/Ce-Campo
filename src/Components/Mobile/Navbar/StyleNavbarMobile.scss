@@ -4,7 +4,7 @@ $breakpoint: 799px;
 $nav-height: 100vh/8;
 $nav-background: #a90000;
 $nav-text-color: #ffffff;
-$link-hover-color: #2581dc;
+$link-hover-color: #6b0000;
 
 
 .inline-div-mobile {
@@ -32,7 +32,7 @@ $link-hover-color: #2581dc;
   }
 }
 
-.spazio-mobile {
+.spazio {
     flex: 3;
 }
 
@@ -93,4 +93,12 @@ $link-hover-color: #2581dc;
     background: $link-hover-color;
     color: $nav-text-color;
   }
+}
+
+#hi-menu {
+  display: flex;
+}
+
+#io-close {
+  display: none;
 }

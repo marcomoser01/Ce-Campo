@@ -1,5 +1,6 @@
 import React from "react";
 import { HiMenu } from "react-icons/hi";
+import { IoClose } from "react-icons/io5";
 import $ from "jquery";
 import "./StyleNavbarMobile.scss";
 import logo from "../../../Images/logo.jpeg";
@@ -12,12 +13,13 @@ export default function NavbarComp() {
           <div className="logo-mobile">
             <img src={logo} alt="logo"></img>
           </div>
-          <div className="spazio-mobile"></div>
+          <div className="spazio"></div>
           <div
             className="nav-mobile"
             onClick={() => menuIconClick("#campi-navbar-visibili")}
           >
-            <HiMenu />
+            <HiMenu id="hi-menu" />
+            <IoClose id="io-close"/>
           </div>
         </div>
       </div>
@@ -48,7 +50,11 @@ function menuIconClick(classe) {
   let display = $(classe).css("display");
   if (display === "none") {
     $(classe).css({ display: "flex" });
+    $('#hi-menu').css({ display: "none"});
+    $('#io-close').css({ display: "flex"});
   } else {
     $(classe).css({ display: "none" });
+    $('#io-close').css({ display: "none"});
+    $('#hi-menu').css({ display: "flex"});
   }
 }
