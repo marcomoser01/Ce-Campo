@@ -1,0 +1,126 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  max-width: 100%;
+  width: 100%;
+  max-height: 100%;
+  height: 6.5rem;
+
+  padding-left: 2%;
+  padding-right: 2%;
+  background: #850005;
+
+  overflow: hidden;
+
+  border-radius: 2rem;
+}
+
+.logo {
+  flex-shrink: 0;
+  width: 5rem;
+  height: 5rem;
+}
+
+.nome {
+  display: flex;
+  width: 15%;
+  height: 90%;
+  flex-direction: column;
+  justify-content: center;
+  /* margin: 0 2rem 0 2rem; */
+  margin-left: 2rem;
+
+  color: #FFF;
+  text-align: center;
+  font-family: Inter;
+  font-size: 3.125rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.campi {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  width: 81.25rem;
+  height: 70%;
+
+  overflow: hidden;
+  /* padding-left: 2%;
+  padding-right: 2%; */
+  gap: 2%;
+}
+
+.campo-container {
+  display: flex;
+  width: 17%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+
+  border-radius: 0.625rem;
+  background: #7b0004;
+
+
+}
+
+.campo-container:hover {
+  background: #630004;
+}
+
+.campo {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+
+  color: #FFF;
+  text-align: center;
+  text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  font-family: Inter;
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.container-burgher {
+  display: none;
+}
+
+
+@media (max-width: 1760px) {
+  .nome {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 1600px) {
+  .nome {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 1400px) {
+  .nome {
+    display: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  .container {
+    display: none;
+  }
+
+  .container-burgher {
+    display: flex;
+  }
+}
