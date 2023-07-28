@@ -1,10 +1,14 @@
 import "./App.css";
 import Navbar from "./Components/Navbar/Navbar.js";
+import Demo from "./Components/Carousel/Demo.js";
 
 function App() {
   return (
-    <div className="navbar">
-      <Navbar />
+    <div>
+      <div className="navbar">
+        <Navbar />
+      </div>
+      <Demo />
     </div>
   );
 }
