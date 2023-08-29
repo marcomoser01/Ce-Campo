@@ -17,11 +17,19 @@
   border-radius: 2rem;
 }
 
-.logo {
+.big-logo {
+  flex-shrink: 0;
+  width: 20rem;
+  height: 5rem;
+}
+
+.small-logo {
   flex-shrink: 0;
   width: 5rem;
   height: 5rem;
+  display: none;
 }
+
 
 .nome {
   display: flex;
@@ -49,6 +57,7 @@
 
   width: 81.25rem;
   height: 70%;
+  margin-left: auto;
 
   overflow: hidden;
   /* padding-left: 2%;
@@ -112,6 +121,16 @@
 @media (max-width: 1400px) {
   .nome {
     display: none;
+  }
+}
+
+@media (max-width: 1250px) {
+  .big-logo {
+    display: none;
+  }
+
+  .small-logo {
+    display: block;
   }
 }
 

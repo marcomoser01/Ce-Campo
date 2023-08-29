@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 
 import "./style/style.css";
-import logo from "../../img/logo.jpeg";
+import big_logo from "../../img/Logo-chiaro.png";
+import small_logo from "../../img/logo.jpeg";
 import Campi from "./Campi";
 import BurgherMenu from "./BurgherMenu";
 
@@ -10,8 +11,8 @@ export default class Navbar extends Component {
     return (
       <div>
         <div className="container">
-          <img src={logo} className="logo" alt="logo" />
-          <div className="nome ">C’è Campo</div>
+          <img src={big_logo} className="big-logo" alt="logo" />
+          <img src={small_logo} className="small-logo" alt="logo" />
           <div className="campi">
             <Campi name="Chi Siamo" />
             <Campi name="Cosa Facciamo" />

@@ -1,18 +1,18 @@
 import "./App.css";
-import Navbar from "./Components/Navbar/Navbar.js";
-import Demo from "./Components/Carousel/Demo.js";
+import Header from "./Components/Header/Header.js";
 
 function App() {
   return (
     <div>
-      <div className="navbar">
-        <Navbar />
+      <div className="header">
+        <Header />
       </div>
-      <Demo />
+
     </div>
   );
 }
 
+/*
 function getSite() {
   return (
     <div className="flex flex-col items-stretch justify-between w-full gap-32 bg-white">
@@ -128,5 +128,6 @@ function getSite() {
     </div>
   );
 }
+*/
 
 export default App;
