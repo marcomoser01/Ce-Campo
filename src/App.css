@@ -3,3 +3,10 @@
     height: 100vh;
     width: 100%;
 }
+
+.chi-siamo {
+    position: static;
+    height: 60vh;
+    width: 100%;
+    margin-top: 2rem;
+}

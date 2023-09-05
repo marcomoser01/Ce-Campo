@@ -1,9 +1,9 @@
 /* Questo è il file principale di stile */
 
 .container-carousel {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
-    margin: 0 auto;
+    margin: 0;
 }
 
 /* ImageSlider.css */
@@ -11,7 +11,7 @@
 .slide {
     width: 100%;
     height: 100%;
-    border-radius: 10px;
+    margin: 0;
     background-size: cover;
     background-position: center;
 }
@@ -38,18 +38,72 @@
     cursor: pointer;
 }
 
+.descrizione-immagine {
+    position: absolute;
+    top: 70%;
+    height: 20%;
+    width: 85%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    opacity: 0.8;
+    background-color: yellow;
+    font-size: 45px;
+    color: #fff;
+    z-index: 1;
+    cursor: pointer;
+
+}
+
+.descrizione-immagine p {
+    height: auto;
+    width: 80%;
+    margin: 1rem;
+    color: black;
+    overflow: auto;
+}
+
+.bottone-descrizione {
+    width: 15%;
+    height: 40%;
+    position: absolute;
+    bottom: 10%;
+    /* Sposta il pulsante verso il basso del 10% rispetto all'altezza del contenitore padre */
+    right: 2%;
+    /* Sposta il pulsante verso destra del 10% rispetto alla larghezza del contenitore padre */
+    background-color: black;
+    border-radius: 5%;
+}
+
 .slider {
     position: relative;
+    width: 100%;
     height: 100%;
 }
 
 .dots-container {
     display: flex;
     justify-content: center;
+    width: 100%;
+    position: absolute;
+    bottom: 1rem;
+    z-index: 10;
 }
 
 .dot {
     margin: 0 3px;
     cursor: pointer;
     font-size: 20px;
+}
+
+
+@media (max-width: 1000px) {
+
+    .slider {
+        height: 80%;
+    }
+
+    .descrizione-immagine {
+        position: relative;
+    }
 }
