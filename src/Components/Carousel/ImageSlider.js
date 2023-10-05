@@ -39,37 +39,47 @@ const ImageSlider = ({ slides, intervalDuration }) => {
   function imageInteraction() {
     return (
       <div>
-        <div onClick={goToPrevious} className="left-arrow">
-          ❰
+        <div>
+          <div onClick={goToPrevious} className="left-arrow">
+            ❰
+          </div>
+          <div onClick={goToNext} className="right-arrow">
+            ❱
+          </div>
         </div>
-        <div onClick={goToNext} className="right-arrow">
-          ❱
-        </div>
-        <div className="descrizione-immagine">
-          <p>{slides[currentIndex].description}</p>
-          <input type="button" className="bottone-descrizione" />
-        </div>
+        
       </div>
     );
   };
 
   return (
     <div className="slider">
-      {/* Usa la classe CSS "slider" */}
-      <div className="slide" style={slideStylesWidthBackground}></div>
-      <div className="dots-container">
-        {slides.map((slide, slideIndex) => (
-          <div
-            className="dot"
-            key={slideIndex}
-            onClick={() => goToSlide(slideIndex)}
-          >
-            ●
+
+      <div className="slide-dots-container">
+      
+          <div className="slide" style={slideStylesWidthBackground}></div>
+          <div className="dots-container">
+            {slides.map((slide, slideIndex) => (
+              <div
+                className="dot"
+                key={slideIndex}
+                onClick={() => goToSlide(slideIndex)}
+              >
+                ●
+              </div>
+            ))}
           </div>
-        ))}
+      
+        {imageInteraction()}
+
       </div>
 
-      {imageInteraction()}
+
+      <div className="descrizione-immagine">
+          <p>{slides[currentIndex].description}</p>
+          <input type="button" className="bottone-descrizione" />
+      </div>
+      
     </div>
   );
 };

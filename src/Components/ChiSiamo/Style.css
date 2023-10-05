@@ -62,3 +62,10 @@
     height: 150px;
     background-color: black;
 }
+
+@media (max-width: 1000px) {
+    .container-chisiamo {
+        grid-template-columns: none;
+        grid-template-rows: 50% 50%;
+    }
+}
