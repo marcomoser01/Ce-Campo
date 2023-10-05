@@ -9,7 +9,10 @@ function App() {
         <Header />
       </div>
       <div className="chi-siamo">
-        <ChiSiamo />
+        <ChiSiamo posizione="sinistra" title="Chi Siamo"/>
+      </div>
+      <div className="chi-siamo">
+        <ChiSiamo posizione="destra" title="Cosa facciamo"/>
       </div>
     </div>
   );
