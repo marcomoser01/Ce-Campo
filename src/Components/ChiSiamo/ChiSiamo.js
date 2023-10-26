@@ -16,16 +16,16 @@ export default class ChiSiamo extends Component {
     this.setState({ data: matchingData });
 
   }
-  
+
   renderSinistra(data) {
     return (
       <>
-          <div className='descrizione-chisiamo'>
-            <div className='descrizione-chisiamo-titolo'>{data.title}</div>
-            <div className='descrizione-chisiamo-descrizione'>{data.description}</div>
-            <input type='button' className='descrizione-chisiamo-bottone' />
-          </div>
-          <div className='immagine-chisiamo'></div>
+        <div className='descrizione-chisiamo'>
+          <div className='descrizione-chisiamo-titolo'>{data.title}</div>
+          <div className='descrizione-chisiamo-descrizione'>{data.description}</div>
+          <input type='button' className='descrizione-chisiamo-bottone' />
+        </div>
+        <div className='immagine-chisiamo'></div>
       </>
     );
   }
@@ -42,7 +42,7 @@ export default class ChiSiamo extends Component {
       </>
     );
   }
-  
+
 
   render() {
     const { posizione } = this.props;
