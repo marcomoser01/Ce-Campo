@@ -1,14 +1,21 @@
-.header {
+.root-header {
     position: static;
     height: 100vh;
     width: 100%;
 }
 
-.chi-siamo {
+.root-chi-siamo {
     position: static;
     height: 60vh;
     width: 100%;
     margin-top: 2rem;
+}
+
+.root-footer {
+    position: static;
+    height: 35vh;
+    width: 100%;
+    margin-top: 2%;
 }
 
 @media (max-width: 1000px) {

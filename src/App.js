@@ -1,20 +1,26 @@
+import React from 'react';
+
 import "./App.css";
 import Header from "./Components/Header/Header.js";
 import ChiSiamo from "./Components/ChiSiamo/ChiSiamo.js";
+import Footer from './Components/Footer/Footer';
 
 function App() {
   return (
-    <div>
-      <div className="header">
+    <>
+      <div className="root-header">
         <Header />
       </div>
-      <div className="chi-siamo">
+      <div className="root-chi-siamo">
         <ChiSiamo posizione="sinistra" title="Chi Siamo"/>
       </div>
-      <div className="chi-siamo">
+      <div className="root-chi-siamo">
         <ChiSiamo posizione="destra" title="Cosa facciamo"/>
       </div>
-    </div>
+      <div className='root-footer'>
+        <Footer />
+      </div>
+    </>
   );
 }
 

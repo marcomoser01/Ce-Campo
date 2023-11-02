@@ -38,17 +38,15 @@ const ImageSlider = ({ slides, intervalDuration }) => {
 
   function imageInteraction() {
     return (
-      <div>
-        <div>
+        <>
           <div onClick={goToPrevious} className="left-arrow">
             ❰
           </div>
           <div onClick={goToNext} className="right-arrow">
             ❱
           </div>
-        </div>
+        </>
         
-      </div>
     );
   };
 

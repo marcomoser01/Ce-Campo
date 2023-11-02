@@ -56,7 +56,7 @@ export default class ChiSiamo extends Component {
     // Determina le colonne CSS in base alla posizione
     const gridColumns = isPosizioneDestra ? '40% 60%' : '60% 40%';
     return (
-      <div className="container-chisiamo" style={{ gridTemplateColumns: gridColumns }}>
+      <div className="chisiamo" style={{ gridTemplateColumns: gridColumns }}>
         {data && (isPosizioneDestra ? this.renderDestra(data) : this.renderSinistra(data))}
 
       </div>
