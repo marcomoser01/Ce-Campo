@@ -3,10 +3,14 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
-
+      colors: {
+        gray: "#1e2833",
+        white: "#fff",
+      },
       height: {
         "30": "7.5rem",
-        // Aggiungi altri valori personalizzati qui
+      }, fontFamily: {
+        "dm-sans": "'DM Sans'",
       },
       backgroundColor: {
         bordeaux_chiaro: "#850005",
@@ -14,6 +18,14 @@ module.exports = {
       },
 
     },
+    fontSize: {
+      xl: "1.25rem",
+      inherit: "inherit",
+    },
     plugins: [],
   },
+  corePlugins: {
+    preflight: false,
+  },
 };
+
